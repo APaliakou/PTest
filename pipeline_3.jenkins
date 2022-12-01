@@ -1,13 +1,13 @@
-pipeline {
+bat '''pipeline {
    agent any
 
    stages {
 
-      stage('runpy') {
+      stage(\'runpy\') {
         steps{      
-          sh 'python test_test_DB.py'
+          sh \'python test_test_DB.py\'
         }
         }
 
   }
-}
+}'''
