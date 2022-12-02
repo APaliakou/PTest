@@ -1,10 +1,8 @@
-import pyodbc
+import pymssql
 
 from checker import *
-conn = pyodbc.connect('Driver={SQL Server};'
-                      'Server=EPPLWARW0123\SQLEXPRESS;'
-                      'Database=TRN;'
-                      'Trusted_Connection=yes;')
+conn = pymssql.connect(server='127.0.0.1', user='T1000', password='qwerty',
+                       database='TRN', port='53424')
 
 
 def test_column_completeness_department_name_departments():
