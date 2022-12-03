@@ -1,7 +1,7 @@
 import pymssql
 
 from checker import *
-conn = pymssql.connect(server='127.0.0.1', user='T1000', password='qwerty',
+conn = pymssql.connect(server='172.21.32.1', user='T1000', password='qwerty',
                        database='TRN', port='53424')
 
 
