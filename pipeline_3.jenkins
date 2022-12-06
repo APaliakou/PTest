@@ -16,6 +16,8 @@ pipeline {
       stage('runpy') {
         steps{      
           sh 'python3 test_test_DB.py'
+          sh 'pytest --junitxml results.xml .'
+          junit 'results.xml'
         }
         }
 
