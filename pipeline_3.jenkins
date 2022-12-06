@@ -8,11 +8,6 @@ pipeline {
             sh "pip3 list"
                }
       }
-      stages('clone git'){
-         steps {
-            git branch: 'main', url: 'https://github.com/APaliakou/PTest.git'
-         }
-         }
       stage('runpy') {
         steps{      
           sh 'python3 test_test_DB.py'
